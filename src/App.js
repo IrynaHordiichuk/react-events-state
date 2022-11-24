@@ -1,12 +1,12 @@
+import React from 'react';
+import Counter from './components/Counter/Counter';
 
+const App = () => (
+  <>
 
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+  <h1>Сomponent State</h1>
+    <Counter />
+  </>
+);
 
 export default App;
