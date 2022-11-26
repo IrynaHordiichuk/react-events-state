@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Counter.css';
 import Controls from './Controls';
 import Value from './Value';
 
-class Counter extends React.Component {
+class Counter extends Component {
 
   static defaultProps = {
     initialValue: 0,
@@ -31,9 +31,11 @@ class Counter extends React.Component {
   };
 
   render() {
+    const {value} = this.state;
+  
     return (
       <div className="Counter">
-      <Value value={this.state.value}/>
+      <Value value={value}/>
 
         <Controls 
         onIncrement ={this.handleIncrement}
